@@ -1,0 +1,76 @@
+@charset "UTF-8";
+.wrapper{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+.lead {
+  padding: 30px 0;
+}
+
+@media print , screen and (min-width:768px){
+  .lead{
+    width: 800px;
+    margin: auto;0 auto;
+    text-align: center;
+  }
+}
+.img-link-wrap{
+  margin-bottom:40px;
+  }
+@media print , screen and (min-width:768px){
+  .img-link-wrap{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom:  80px;
+  }
+  .img-link{
+    width: 50%;
+  }
+}
+.img-link a{
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.img-link a .heading02 {
+  color: #fff;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;                       /* 左部分を基準点から0の位置に */
+  -webkit-transform: translate(0, -50%); /* 要素の位置を50%分だけ上に */
+  transform: translate(0, -50%);
+  margin-bottom: 0;
+}
+.img-link a .heading04 {
+  color: #fff;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;                       /* 左部分を基準点から0の位置に */
+  -webkit-transform: translate(0, -50%); /* 要素の位置を50%分だけ上に */
+  transform: translate(0, -50%);
+  margin-bottom: 0;
+}
+.img-link a .heading02 span {
+  border-color: #fff;            /* 罫線を白色に */
+}
+.img-link a .heading04 span{
+  border-color: #000;            /* 罫線を白色に */
+}
+.img-link a img {
+  display: block;                /* 表示形式をブロックに */
+}
+.heading03{
+  font-size: 20px;  /*文字の大きさの指定*/
+  font-weight: bold;/*文字を太字に*/
+  color: #000;　　　/*文字のカラーの指定*/
+  font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  margin-bottom: 5px;/*下部分の外余白を20pxに*/
+}
