@@ -4,7 +4,7 @@
   height: 0;                    /* 要素の高さを0% */
   padding-bottom: 100%;         /* 内余白の下部分を100% */
   position: relative;
-  background:url(../img/top/tobubuta.png) no-repeat center center/cover; /* 背景画像を領域を埋めるように、中央に配置 */
+  background:url(../img/header/tobubuta.png) no-repeat center center/cover; /* 背景画像を領域を埋めるように、中央に配置 */
 }
 @media print , screen and (min-width:768px) {
   .header{
