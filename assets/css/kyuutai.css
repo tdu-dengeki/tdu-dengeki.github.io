@@ -83,7 +83,7 @@ padding: 30px 0;
   text-align: center;/* 文字を中央ぞろえに */
   width: 100px;/*要素の横幅を200px*/
   margin:auto;/*要素の外余白を0に左右は、自動で合わせて、下の余白を60px*/
-  border: 2px solid #000;/* 下部分の罫線を2px、実線、黒色に*/　
+  border: 5px solid #000;/* 下部分の罫線を2px、実線、黒色に*/　
   text-decoration: none;/* 文字の装飾を無し */
   padding:0 auto 0;/* 要素の内余白を上に13px左右０下に１2px とる*/
   font-weight: bold;/* 文字を太字 */
