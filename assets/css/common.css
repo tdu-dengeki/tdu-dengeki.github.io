@@ -1,152 +1,151 @@
 @charset "UTF-8";
-/*
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com
-Twitter: @rich_clark
-*/
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
+.header {          /* 要素の配置を相対座標に指定 */
+  width: 100%;                  /* 要素の幅を100% */
+  height: 0;                    /* 要素の高さを0% */
+  padding-bottom: 100%;         /* 内余白の下部分を100% */
+  position: relative;
+  background:url(../img/header/normal.jpg) no-repeat center center/cover; /* 背景画像を領域を埋めるように、中央に配置 */
 }
 
-body {
-  line-height: 1;
+@media print , screen and (min-width:768px) {
+  .header{
+    height:400px;
+    padding-bottom: 0;
+  }
+
+}
+.logo{
+  width: 60px;
+  padding: 10px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left:20px;
+}
+@media print , screen and (min-width:768px) {
+  .logo{
+    width: 90px;
+    padding: 1px;
+    left: 40px;
+  }
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-nav ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-a {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-}
-
-/* change colours to suit your needs */
-ins {
-  background-color: #ff9;
+.catch-copy,.page-title {
+  text-align: center;
+  width: 100%;
   color: #000;
-  text-decoration: none;
-}
-
-/* change colours to suit your needs */
-mark {
-  background-color: #ff9;
-  color: #000;
-  font-style: italic;
+  font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-size: 6vw;
   font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
 }
 
-del {
-  text-decoration: line-through;
+
+
+@media print , screen and (min-width:768px) {
+  .catch-copy,page-title{
+    font-size: 50px
+  }
 }
 
-abbr[title], dfn[title] {
-  border-bottom: 1px dotted;
-  cursor: help;
+.heading02{
+  text-align: center;/*文字を中央ぞろえに*/
+  font-size: 20px;  /*文字の大きさの指定*/
+  font-weight: bold;/*文字を太字に*/
+  color: #000;　　　/*文字のカラーの指定*/
+  font-family: "MS 明朝";
+  margin-bottom: 5px;/*下部分の外余白を20pxに*/
 }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+.heading02 span {
+  border-bottom: 3px solid #000; /* 下部分の罫線を 3px、実線、黒色に */
+  padding-bottom: 1px;           /* 下部分の余白を 4pxに */
 }
 
-/* change border colour to suit your needs */
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #cccccc;
-  margin: 1em 0;
-  padding: 0;
+@media print , screen and (min-width:768px) {
+  .heading02{
+    font-size: :20px;
+    margin-bottom: 40px;
+  }
 }
 
-input, select {
-  vertical-align: middle;
+.lead{
+  font-size: 16px;
+  line-height: 2.0;
 }
 
-/* setting */
-* {
-  box-sizing: border-box;
+.btn{
+  display: block;/* 表示形式をブロックに */
+  text-align: center;/* 文字を中央ぞろえに */
+  width: 100px;/*要素の横幅を200px*/
+  margin:0 auto 60px;/*要素の外余白を0に左右は、自動で合わせて、下の余白を60px*/
+  border: 2px solid #000;/* 下部分の罫線を2px、実線、黒色に*/　
+  text-decoration: none;/* 文字の装飾を無し */
+  padding:0 0 1px;/* 要素の内余白を上に13px左右０下に１2px とる*/
+  font-weight: bold;/* 文字を太字 */
 }
-
-html {
-  font-size: 62.5%;
-  width: 100%;
-}
-
-body {
-  color: #000;
-  font-family: "ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-  font-size: 14px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-body a {
-  text-decoration: underline;
-  color: #000;
-  transition: .2s ease-in-out;
-}
-
-body a:hover {
-  text-decoration: none;
-}
-
-body a:visited {
-  text-decoration: underline;
-}
-
-img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-
 @media print, screen and (min-width: 768px) {
-  img {
-    width: auto;
-  }
-  body a {
-    transition: .2s ease-in-out;
-  }
-  body a:hover {
-    opacity: .5;
+  .btn {
+    width: 200px;                /* 要素の横幅を400pxに */
+    padding: 5px 0;             /* 要素の内余白を上下20、左右0に */
+    font-size: 20px;             /* 文字サイズを14pxに */
   }
 }
+
+.footer {             /*class="fotter"の要素の指定*/
+  padding: 15px 10px;/*内余白を上下15px、左右10pxに*/
+}
+@media print , screen and (min-width:768px) {
+  .footer {
+    padding: 30px 10px;
+  }
+}
+
+.copy {
+  text-align: center;            /* 文字を中央揃えに */
+  font-size: 1.0rem;             /* 文字サイズを1remに */
+}
+.glovalnav{
+  position: relative;
+  padding: 0 10px;
+  -webkit-transform:translate(0,-50%);
+  transform:translate(0,-50%);
+}
+.glovalnav li{
+  display: table-cell;
+  text-align: center;
+}
+.glovalnav li:not(:first-child){
+  border-left: 1px solid #000;
+}
+
+.glovalnav li a{
+  font-size: 1.3rem;
+  display: block;
+  background-color: #fff;
+  text-decoration: none;
+  padding: 15px 0;
+}
+
+.glovalnav li a:hover{
+  opacity: 1;
+}
+.glovalnav-list{
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: table;
+  table-layout: fixed;
+  border: 1px solid #000;
+}
+@media print, screen and  (min-width: 768px) {
+  .glovalnav li a:hover{
+    background: #000;
+    color:#fff;
+  }
+}
+
