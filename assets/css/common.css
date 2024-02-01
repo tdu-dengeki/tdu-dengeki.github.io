@@ -149,3 +149,7 @@
   }
 }
 
+.warning {
+  background-color: #8b8b8b;
+  color: #000;
+}
